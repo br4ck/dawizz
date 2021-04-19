@@ -31,7 +31,7 @@ if (!isset($_SESSION['loggedin'])) {
 				if(file_exists($_SESSION['name']))
 				{
 					echo 'Made!';
-					//echo '';
+					echo '<p> Bot Dashboard Link: <input type="button" value="Click Here" onclick="msg()"></p>';
 				}
 				else
 				{
