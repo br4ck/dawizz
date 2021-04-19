@@ -43,6 +43,7 @@
 
 body.loggedin {
     background-color: #36393f;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .content {
@@ -54,8 +55,8 @@ body.loggedin {
         margin: 0;
         padding: 25px 0;
         font-size: 22px;
-        border-bottom: 1px solid #e0e0e3;
-        color: #4a536e;
+        border-bottom: 1px solid #99aab5;
+        color: #99aab5;
     }
 
     .content > p, .content > div {
