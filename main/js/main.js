@@ -34,6 +34,7 @@ token = localStorage.getItem("token");
 const client = new Discord.Client();
 client.login(token).catch(() => {
     alert(localeFile.token.invalid);
+    console.log("Logged in! Running Main Processes.");
 });
 
 function escapeHtml(text) {
