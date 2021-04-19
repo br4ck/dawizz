@@ -63,6 +63,7 @@ body.loggedin {
         margin: 25px 0;
         padding: 25px;
         background-color: #2c2f33;
+        color: #99aab5;
     }
 
         .content > p table td, .content > div table td {
