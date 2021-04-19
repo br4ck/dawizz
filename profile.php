@@ -35,8 +35,8 @@ $stmt->close();
 	<body class="loggedin">
 		<nav class="navtop">
 			<div>
-				<h1>Website Title</h1>
-				<a href="profile"><i class="fas fa-user-circle"></i>Profile</a>
+				<h1>Dawizz Nuking Dashboard</h1>
+				<a href="home"><i class="fas fa-home"></i>home</a>
 				<a href="logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
 			</div>
 		</nav>

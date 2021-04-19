@@ -18,7 +18,13 @@ if (!isset($_SESSION['loggedin'])) {
 	<body class="loggedin">
 		<nav class="navtop">
 			<div>
-				<h1>Website Title</h1>
+				<h1>Dawizz Nuking Dashboard</h1>
+				<?
+					if($_SESSION['name'])
+					{
+						echo '<a href="admin"><i class="fas fa-user-shield"></i></a>';
+					}
+				?>
 				<a href="profile"><i class="fas fa-user-circle"></i>Profile</a>
 				<a href="logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
 			</div>
