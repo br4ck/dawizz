@@ -14,11 +14,6 @@ if (!isset($_SESSION['loggedin'])) {
 		<title>Dashboard Page</title>
 		<link href="main.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-		<script>
-		function link()
-		{
-			document.location.href = "https://www.dawizz.xyz/' .  $_SESSION['name'] . '";
-		}
 	</head>
 	<body class="loggedin">
 		<nav class="navtop">
@@ -36,7 +31,7 @@ if (!isset($_SESSION['loggedin'])) {
 				if(file_exists($_SESSION['name']))
 				{
 					echo 'Made!';
-					echo '<p> Bot Dashboard Link: <input type="button" value="Click Here" onclick="link()" ></p>';
+					echo '<p> Bot Dashboard Link: <button onclick="window.location.href='/$_SESSION['name']'">Continue</button></p>';
 				}
 				else
 				{
