@@ -11,7 +11,7 @@ if (!isset($_SESSION['loggedin'])) {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Home Page</title>
+		<title>Dashboard Page</title>
 		<link href="main.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	</head>
@@ -24,8 +24,24 @@ if (!isset($_SESSION['loggedin'])) {
 			</div>
 		</nav>
 		<div class="content">
-			<h2>Home Page</h2>
+			<h2>Dashboard</h2>
 			<p>Welcome back, <?=$_SESSION['name']?>!</p>
+			<p>Bot Dashboard Made:
+				<? 
+				try
+				{
+					if(is_dir($_SESSION['name']))
+					{
+						echo 'true';
+					}
+				}
+				catch(Exception $e)
+				{
+					echo 'false';
+				}
+				?>
+			
+			</p>
 		</div>
 	</body>
 </html>
