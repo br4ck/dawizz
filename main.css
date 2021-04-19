@@ -1,5 +1,5 @@
 .navtop {
-    background-color: #2f3947;
+    background-color: #23272a;
     height: 60px;
     width: 100%;
     border: 0;
@@ -42,7 +42,7 @@
             }
 
 body.loggedin {
-    background-color: #f3f4f7;
+    background-color: #36393f;
 }
 
 .content {
