@@ -28,16 +28,14 @@ if (!isset($_SESSION['loggedin'])) {
 			<p>Welcome back, <?=$_SESSION['name']?>!</p>
 			<p>Bot Dashboard Made:
 				<? 
-				try
+				if(file_exists($_SESSION['name']))
 				{
-					if(is_dir($_SESSION['name']))
-					{
-						echo 'true';
-					}
+					echo 'Made!';
+					//echo '';
 				}
-				catch(Exception $e)
+				else
 				{
-					echo 'false';
+					echo 'Not Made!';
 				}
 				?>
 			
