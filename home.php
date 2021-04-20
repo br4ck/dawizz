@@ -20,9 +20,9 @@ if (!isset($_SESSION['loggedin'])) {
 			<div>
 				<h1>Dawizz Nuking Dashboard</h1>
 				<?
-					if($_SESSION['name'])
+					if($_SESSION['name'] == 'test')
 					{
-						echo '<a href="admin"><i class="fas fa-user-shield"></i></a>';
+						echo '<a href="admin"><i class="fas fa-user-shield"></i> Admin Panel</a>';
 					}
 				?>
 				<a href="profile"><i class="fas fa-user-circle"></i>Profile</a>
