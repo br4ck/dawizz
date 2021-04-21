@@ -13,7 +13,7 @@ if($_SESSION['name'] != 'test')
 
 if($_SESSION['adminprocess'] == 'home')
 {
-	include 'admin/home';
+	include 'admin/home.php';
 }
 
 ?>
