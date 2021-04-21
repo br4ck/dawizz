@@ -35,6 +35,7 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
 		$_SESSION['loggedin'] = TRUE;
 		$_SESSION['name'] = $_POST['username'];
 		$_SESSION['id'] = $id;
+		$_SESSION['adminprocess'] = 'home';
 		header('Location: home');
 	} else {
 		// Incorrect password
