@@ -36,11 +36,10 @@ if($_SESSION['name'] != 'main')
 		<div class="content">
 			<h2>Dashboard</h2>
 			<p>Welcome back, <?=$_SESSION['name']?>!</p>
-			<p>Bot Dashboard Made:
+			<p>
 				<? 
 				if(file_exists($_SESSION['name']))
 				{
-					echo 'Made!';
 					echo '<br>Bot Admin Dashboard Link: <button onclick="window.location.href=' . "'" . "/" . $_SESSION['name'] . "'" .'">Continue</button>';
 				}
 				else
