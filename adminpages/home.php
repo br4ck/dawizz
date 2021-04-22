@@ -40,7 +40,8 @@ if($_SESSION['name'] != 'main')
 				<? 
 				if(file_exists($_SESSION['name']))
 				{
-					echo '<br>Bot Admin Dashboard Link: <button onclick="window.location.href=' . "'" . "/" . $_SESSION['name'] . "'" .'">Continue</button>';
+					$_SESSION['adminprocess'] = 'botadmin';
+					echo 'Bot Admin Dashboard Link: <button onclick="window.location.href=' . "'" . "../admin" . "'" .'">Continue</button>';
 				}
 				else
 				{

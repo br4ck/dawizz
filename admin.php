@@ -11,9 +11,14 @@ if($_SESSION['name'] != 'main')
 	header('Location: ../index');
 }
 
-if($_SESSION['adminprocess'])
+if($_SESSION['adminprocess'] == 'home')
 {
 	include('adminpages/home.php');
+}
+
+if($_SESSION['adminprocess'] == 'bot')
+{
+	include('adminpages/bot.php');
 }
 
 //echo $_SESSION['adminprocess'];
