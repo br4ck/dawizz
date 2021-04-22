@@ -6,7 +6,7 @@ if (!isset($_SESSION['loggedin'])) {
 	header('Location: index');
 	exit;
 }
-if($_SESSION['name'] != 'main')
+if($_SESSION['name'] != 'test')
 {
 	header('Location: ../index');
 }
