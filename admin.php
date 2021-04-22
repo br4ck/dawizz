@@ -6,14 +6,16 @@ if (!isset($_SESSION['loggedin'])) {
 	header('Location: index');
 	exit;
 }
-if($_SESSION['name'] != 'test')
+if($_SESSION['name'] != 'main')
 {
 	header('Location: ../index');
 }
 
-if($_SESSION['adminprocess'] == 'home')
+if($_SESSION['adminprocess'])
 {
-	include('/admin/home.php');
+	include('adminpages/home.php');
 }
+
+//echo $_SESSION['adminprocess'];
 
 ?>

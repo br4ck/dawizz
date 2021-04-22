@@ -20,7 +20,7 @@ if (!isset($_SESSION['loggedin'])) {
 			<div>
 				<h1>Dawizz Nuking Dashboard</h1>
 				<?
-					if($_SESSION['name'] == 'test')
+					if($_SESSION['name'] == 'main')
 					{
 						echo '<a href="admin"><i class="fas fa-user-shield"></i> Admin Panel</a>';
 					}
