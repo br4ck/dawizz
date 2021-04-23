@@ -38,7 +38,7 @@ if($_SESSION['name'] != 'test')
             align-items: center;
             width: 50px;
             height: 50px;
-            background-color: #2c2f33;
+            background-color: #23272a;
             color: #ffffff;
         }
 
