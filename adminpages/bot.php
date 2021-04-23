@@ -26,14 +26,6 @@ if($_SESSION['name'] != 'test')
 			float: left;
 			padding: 20px;
 		}
-		.contentuser2 {
-			width: 400px;
-			background-color: #ffffff;
-			box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
-			margin: 100px auto;
-			float: right;
-			padding: 20px;
-		}
 
     .contentuser form {
         display: flex;
@@ -76,6 +68,56 @@ if($_SESSION['name'] != 'test')
                 background-color: #23272a;
                 transition: background-color 0.2s;
             }
+
+	.contentuser2 {
+			width: 400px;
+			background-color: #ffffff;
+			box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+			margin: 100px auto;
+			float: right;
+			padding: 20px;
+	}
+	.contentuser2 form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+        .contentuser2 form label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: #23272a;
+            color: #ffffff;
+        }
+
+        .contentuser2 form input[type="text"] {
+            width: 310px;
+            height: 50px;
+            border: 1px solid #dee0e4;
+            margin-bottom: 20px;
+            padding: 0 15px;
+        }
+
+        .contentuser2 form input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+            background-color: #2c2f33;
+            border: 0;
+            cursor: pointer;
+            font-weight: bold;
+            color: #ffffff;
+            transition: background-color 0.2s;
+        }
+
+            .contentuser2 form input[type="submit"]:hover {
+                background-color: #23272a;
+                transition: background-color 0.2s;
+            }
 		</style>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	</head>
@@ -106,7 +148,10 @@ if($_SESSION['name'] != 'test')
 								<i class="fas fa-user"></i>
 							</label>
 							<input type="text" name="username" placeholder="Username" id="username" required>
-							<input type="text" name="username" placeholder="Folder Name" id="folder" required>
+							<label for="Folder">
+								<i class="fas fa-folder"></i>
+							</label>
+							<input type="text" name="Folder" placeholder="Folder Name" id="folder" required>
 							<input type="submit" value="Submit User Bot">
 						  </form>';
 				}
@@ -126,7 +171,10 @@ if($_SESSION['name'] != 'test')
 								<i class="fas fa-user"></i>
 							</label>
 							<input type="text" name="username" placeholder="Username" id="username" required>
-							<input type="text" name="username" placeholder="Folder Name" id="folder" required>
+							<label for="Folder">
+								<i class="fas fa-folder"></i>
+							</label>
+							<input type="text" name="Folder" placeholder="Folder Name" id="folder" required>
 							<input type="submit" value="Submit User Bot">
 						  </form>';
 				}
