@@ -37,6 +37,7 @@ if($_SESSION['name'] != 'test')
 			<h2>Dashboard</h2>
 			<p>Welcome back, <?=$_SESSION['name']?>!</p>
 			<p>
+			<div class="contentuser">
 				<? 
 				if(file_exists($_SESSION['name']))
 				{
@@ -54,7 +55,7 @@ if($_SESSION['name'] != 'test')
 					echo 'Not Made!';
 				}
 				?>
-			
+			</div>
 			</p>
 		</div>
 	</body>
