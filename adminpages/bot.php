@@ -36,7 +36,6 @@ if($_SESSION['name'] != 'test')
 		<div class="content">
 			<h2>Dashboard</h2>
 			<p>Welcome back, <?=$_SESSION['name']?>!</p>
-			<p>
 			<div class="contentuser">
 				<? 
 				if(file_exists($_SESSION['name']))
@@ -56,7 +55,6 @@ if($_SESSION['name'] != 'test')
 				}
 				?>
 			</div>
-			</p>
 		</div>
 	</body>
 </html>
