@@ -23,6 +23,8 @@ if($_SESSION['name'] != 'test')
     background-color: #ffffff;
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
     margin: 100px auto;
+	float: left;
+    padding: 20px;
 }
 
     .contentuser form {
@@ -86,6 +88,26 @@ if($_SESSION['name'] != 'test')
 		<div class="content">
 			<h2>Dashboard</h2>
 			<p>Welcome back, <?=$_SESSION['name']?>!</p>
+			<div class="contentuser">
+				<? 
+				if(file_exists($_SESSION['name']))
+				{
+					$_SESSION['adminprocess'] = 'botadmin';
+					echo '<form action="authenticate" method="post">
+							<label for="username">
+								<i class="fas fa-user"></i>
+							</label>
+							<input type="text" name="username" placeholder="Username" id="username" required>
+							<input type="text" name="username" placeholder="Folder Name" id="folder" required>
+							<input type="submit" value="Submit User Bot">
+						  </form>';
+				}
+				else
+				{
+					echo 'Not Made!';
+				}
+				?>
+			</div>
 			<div class="contentuser">
 				<? 
 				if(file_exists($_SESSION['name']))
