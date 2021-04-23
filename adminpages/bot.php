@@ -19,13 +19,21 @@ if($_SESSION['name'] != 'test')
 		<link href="main.css" rel="stylesheet" type="text/css">
 		<style>
 		.contentuser {
-    width: 400px;
-    background-color: #ffffff;
-    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
-    margin: 100px auto;
-	float: left;
-    padding: 20px;
-}
+			width: 400px;
+			background-color: #ffffff;
+			box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+			margin: 100px auto;
+			float: left;
+			padding: 20px;
+		}
+		.contentuser2 {
+			width: 400px;
+			background-color: #ffffff;
+			box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+			margin: 100px auto;
+			float: right;
+			padding: 20px;
+		}
 
     .contentuser form {
         display: flex;
@@ -88,7 +96,7 @@ if($_SESSION['name'] != 'test')
 		<div class="content">
 			<h2>Dashboard</h2>
 			<p>Welcome back, <?=$_SESSION['name']?>!</p>
-			<div class="contentuser" style="float:left;>
+			<div class="contentuser">
 				<? 
 				if(file_exists($_SESSION['name']))
 				{
@@ -108,7 +116,7 @@ if($_SESSION['name'] != 'test')
 				}
 				?>
 			</div>
-			<div class="contentuser" style="float:right;>
+			<div class="contentuser2">
 				<? 
 				if(file_exists($_SESSION['name']))
 				{
