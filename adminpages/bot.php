@@ -88,7 +88,7 @@ if($_SESSION['name'] != 'test')
 		<div class="content">
 			<h2>Dashboard</h2>
 			<p>Welcome back, <?=$_SESSION['name']?>!</p>
-			<div class="contentuser">
+			<div class="contentuser" style="float:left;>
 				<? 
 				if(file_exists($_SESSION['name']))
 				{
@@ -108,7 +108,7 @@ if($_SESSION['name'] != 'test')
 				}
 				?>
 			</div>
-			<div class="contentuser">
+			<div class="contentuser" style="float:right;>
 				<? 
 				if(file_exists($_SESSION['name']))
 				{
