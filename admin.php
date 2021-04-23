@@ -16,7 +16,7 @@ if($_SESSION['adminprocess'] == 'home')
 	include('adminpages/home.php');
 }
 
-if($_SESSION['adminprocess'] == 'bot')
+if($_SESSION['adminprocess'] == 'botadmin')
 {
 	include('adminpages/bot.php');
 }
