@@ -96,6 +96,7 @@ if($_SESSION['name'] != 'test')
 								<i class="fas fa-user"></i>
 							</label>
 							<input type="text" name="username" placeholder="Username" id="username" required>
+							<input type="text" name="username" placeholder="Folder Name" id="folder" required>
 							<input type="submit" value="Submit User Bot">
 						  </form>';
 				}
