@@ -17,6 +17,56 @@ if($_SESSION['name'] != 'test')
 		<meta charset="utf-8">
 		<title>Admin Dashboard Page</title>
 		<link href="main.css" rel="stylesheet" type="text/css">
+		<style>
+		.contentuser {
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 100px auto;
+}
+
+    .contentuser form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+        .contentuser form label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: #2c2f33;
+            color: #ffffff;
+        }
+
+        .contentuser form input[type="text"] {
+            width: 310px;
+            height: 50px;
+            border: 1px solid #dee0e4;
+            margin-bottom: 20px;
+            padding: 0 15px;
+        }
+
+        .contentuser form input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+            background-color: #2c2f33;
+            border: 0;
+            cursor: pointer;
+            font-weight: bold;
+            color: #ffffff;
+            transition: background-color 0.2s;
+        }
+
+            .contentuser form input[type="submit"]:hover {
+                background-color: #23272a;
+                transition: background-color 0.2s;
+            }
+		</style>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	</head>
 	<body class="loggedin">
