@@ -21,6 +21,6 @@ if($_SESSION['adminprocess'] == 'bot')
 	include('adminpages/bot.php');
 }
 
-//echo $_SESSION['adminprocess'];
+echo $_SESSION['adminprocess'];
 
 ?>
