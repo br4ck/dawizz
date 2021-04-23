@@ -53,14 +53,6 @@ body.loggedin {
     margin: 100px auto;
 }
 
-    .contentuser h1 {
-        text-align: center;
-        color: #5b6574;
-        font-size: 24px;
-        padding: 20px 0 20px 0;
-        border-bottom: 1px solid #dee0e4;
-    }
-
     .contentuser form {
         display: flex;
         flex-wrap: wrap;
@@ -78,7 +70,7 @@ body.loggedin {
             color: #ffffff;
         }
 
-        .contentuser form input[type="password"], .contentuser form input[type="text"] {
+        .contentuser form input[type="text"] {
             width: 310px;
             height: 50px;
             border: 1px solid #dee0e4;
